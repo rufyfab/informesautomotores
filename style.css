@@ -1,0 +1,227 @@
+/* === Variables de color === */
+:root {
+  --color-fondo: #ffffff;           /* blanco */
+  --color-celeste: #6CACE4;         /* celeste Argentina */
+  --color-texto: #333333;           /* un gris oscuro para buena lectura */
+  --color-boton: var(--color-celeste);
+  --color-boton-hover: #5a99c1;     /* variante más oscura */
+}
+
+/* Reset muy básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: var(--color-fondo);
+  color: var(--color-texto);
+  line-height: 1.6;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  font-size: 2em;
+  color: var(--color-celeste);
+}
+
+header p {
+  font-size: 1.1em;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+/* Caja de precios */
+.precios {
+  max-width: 250px;
+  background: #f0f8ff; /* celeste muy claro */
+  border: 1px solid #d0e6f9;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.precios h3 {
+  color: #007BFF;
+  margin-bottom: 10px;
+  font-size: 1.2em;
+}
+
+.precios ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.precios li {
+  margin-bottom: 10px;
+  font-size: 1em;
+}
+
+.form-section {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #fafafa;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1em;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  font-size: 1.1em;
+  color: #fff;
+  background: var(--color-boton);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background: var(--color-boton-hover);
+}
+
+footer {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 0.9em;
+  color: #777;
+}
+
+/* Responsivo simple */
+@media (max-width: 500px) {
+  body {
+    padding: 10px;
+  }
+  .form-section {
+    padding: 15px;
+  }
+}
+
+.nota-precio {
+  display: block;
+  margin-top: 5px;
+  font-size: 0.9em;
+  color: #555;
+}
+
+#patente {
+  text-transform: uppercase;
+}
+
+.whatsapp-btn {
+  display: block;
+  margin-top: 15px;
+  padding: 12px;
+  background-color: #25D366;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.whatsapp-btn:hover {
+  background-color: #1da851;
+}
+
+
+
+.info-pago {
+  background: #eef6ff;
+  border-left: 4px solid #0b74de;
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+.info-pago h3 {
+  margin: 0 0 8px;
+  color: #0b74de;
+}
+
+.info-pago .tiempo {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+.consulta-wsp {
+    background: #e8fff0;
+    border-left: 6px solid #25d366;
+    padding: 18px;
+    margin-top: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.consulta-wsp h3 {
+    margin: 0 0 8px;
+    font-size: 20px;
+    color: #1b8c4a;
+}
+
+.precio-wsp {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 5px 0 15px;
+    color: #1b8c4a;
+}
+
+.btn-wsp {
+    display: inline-block;
+    background: #25d366;
+    color: white;
+    padding: 12px 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.btn-wsp:hover {
+    background: #1ebe5b;
+}

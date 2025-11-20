@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Informes Automotores</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Informes Automotores</h1>
+    <p>Consultá tu informe de dominio o de multas de forma cencilla.</p>
+  </header>
+
+ <main>
+  <section class="form-section">
+    <h2>Solicitá tu informe</h2>
+    <form id="informeForm" action="#" method="post">
+      <div class="form-group">
+        <label for="nombre">Nombre completo</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Correo electrónico</label>
+        <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+        <label for="telefono">Teléfono / Celular</label>
+<input type="tel" id="telefono" name="telefono" placeholder="Ej: 11 2345 6789" required>
+
+      </div>
+
+      <div class="form-group">
+  <label for="patente">Dominio / Patente</label>
+  <input type="text" id="patente" name="patente" placeholder="Ejemplo: ABC123 o AA123BB" required>
+</div>
+
+
+      <div class="form-group">
+        <label for="tipo">Tipo de informe</label>
+        <select id="tipo" name="tipo" required>
+          <option value="">Seleccioná una opción</option>
+          <option value="dominio">Informe de dominio</option>
+          <option value="multas">Informe de multas</option>
+          <option value="ambos">Ambos</option>
+        </select>
+      </div>
+
+      <button type="submit">Solicitar informe</button>
+      <a href="https://wa.me/5491168032844?text=Hola!%20Quisiera%20hacer%20una%20consulta%20sobre%20informes%20DNRPA" 
+   target="_blank" 
+   class="whatsapp-btn">
+    📲 Consultar por WhatsApp
+</a>
+
+    </form>
+  <p style="font-size: 14px; color: #555; margin-top: 12px; text-align: center;">
+  ⏳ <strong>Normalmente los informes se envían dentro de las 24 hs hábiles posteriores al pedido.</strong><br>
+  Sin embargo, en algunos casos el envío puede demorar hasta <strong>72 hs hábiles</strong>.
+</p>
+
+
+
+  </section>
+
+  <aside class="precios">
+    <h3>Precios de los informes</h3>
+    <ul>
+      <li><strong>Informe de dominio:</strong> $3.000</li>
+      <li><strong>Informe de multas:</strong> $6.000</li>
+      <li><strong>Ambos informes:</strong> $9.000</li>
+    </ul>
+  </aside>
+
+  <div class="consulta-wsp">
+    <h3>💬 Consultas por WhatsApp</h3>
+    <p class="precio-wsp">$5.000</p>
+    <a href="https://wa.me/5491168032844?text=Hola!%20Quiero%20realizar%20una%20consulta%20automotor"
+       target="_blank" 
+       class="btn-wsp">
+        📲 Hacer consulta ahora
+    </a>
+</div>
+
+
+<div class="info-pago">
+  <h3>📢 Información importante sobre el pago</h3>
+  <p>
+    Una vez que envíe la solicitud del informe, recibirá los datos para realizar la 
+    transferencia bancaria a través de <strong>WhatsApp</strong> y <strong>correo electrónico</strong>.
+  </p>
+  <p>
+    Luego de realizar el pago, por favor envíe el <strong>comprobante de transferencia</strong> 
+    para poder iniciar el trámite de su informe.
+  </p>
+  <p class="tiempo">
+    ⏳ Tiempo estimado de entrega: <strong>24 a 72 horas hábiles</strong>.
+  </p>
+</div>
+
+</main>
+
+  
+
+  <footer>
+    <p>© 2025 Informes Automotores - Desarrollado QuickDev Studio</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
